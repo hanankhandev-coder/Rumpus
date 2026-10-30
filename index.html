@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rumpus — Creative Studio, Porto</title>
+<meta name="description" content="Rumpus is an independent creative studio in Porto making campaigns, identities, film and print for festivals, labels and small brands.">
+<link rel="icon" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wdth,wght@0,75..100,400..700;1,75..100,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try { if (sessionStorage.getItem('rumpus-curtain')) document.documentElement.classList.add('arriving'); } catch (e) {}</script>
+</head>
+<body data-page="home">
+
+<!-- FILM CAPTIONS: once the film fills the screen, its credits come up over it (rides with the hero) -->
+<div class="film" id="film" aria-hidden="true">
+  <h2 class="film__title"><span class="film__brand" id="filmBrand"></span><span class="film__ln" id="filmL1"></span><span class="film__ln" id="filmL2"></span></h2>
+  <p class="film__note"><span class="film__no" id="filmNo"></span><span id="filmNote"></span></p>
+</div>
+
+<main id="top">
+
+  <!-- 01 HERO: a ribbon of this year's work drifting up a white sheet; the studio's films travel on it. Scrolling grows one to the whole screen. -->
+  <div class="hero-pin" id="heroPin">
+    <section class="hero" id="hero">
+      <h1 class="sr-only">Rumpus, an independent creative studio in Porto: campaigns, identities, film and print for festivals, labels and small brands.</h1>
+      <div class="ribbon" id="ribbon" aria-hidden="true"><!-- cards from home.js --></div>
+      <div class="films" id="films" aria-hidden="true"><!-- one <video> per film in FILMS, placed on the ribbon by home.js --></div>
+      <p class="hero__corner hero__corner--l">Campaigns, identities, film and print.<br>Porto, since 2019.</p>
+      <p class="hero__corner hero__corner--r">Four films on the line.<br>Scroll to watch the one in view ↓</p>
+    </section>
+  </div>
+
+  <!-- 02 STUDIO: one sentence, Circular-style — what we are in ink, everything we do in grey -->
+  <section class="sec studio" id="studio">
+    <p class="label"><span class="label__n">01</span> Studio</p>
+    <h2 class="say">We're an independent studio in Porto bringing loud ideas to life for festivals, labels and small brands, working in <span class="say__list" id="sayList"><a href="work.html?tag=Campaign">Campaigns</a>, <a href="work.html?tag=Identity">Identity</a>, <a href="work.html?tag=Film">Film</a>, <a href="work.html?tag=Print">Riso &amp; screen print</a>, <a href="work.html?tag=Print">Posters</a>, <a href="work.html?tag=Print">Editorial</a>, <a href="work.html?tag=Campaign">Paste-ups</a>, <a href="studio.html">(About us)</a></span></h2>
+    <div class="facts">
+      <p class="reveal"><b data-count="2019">2019</b><span>Founded on Rua do Almada by Rita Sá and Bruno Vaz</span></p>
+      <p class="reveal"><b data-count="4">4</b><span>People, two risographs and one screen bed</span></p>
+      <p class="reveal"><b data-count="12400">12,400</b><span>Sheets in our longest run, every one checked by hand</span></p>
+      <p class="reveal"><b data-count="38">38</b><span>Clients across Portugal, Spain and the UK</span></p>
+    </div>
+</section>
+
+  <!-- 03 WORK: the hero's line laid on its side. Every job rides it as a card; scrolling carries the line along,
+       the job in the middle grows (its film plays) and its credits come up bottom left, like the hero's films -->
+  <section class="wline" id="work" aria-label="Work">
+    <div class="wline__stage">
+      <div class="wline__head"><p class="label"><span class="label__n">02</span> Work <span class="label__n" id="wlineN"></span></p><p class="wline__go"><a class="allw__pill" href="work.html">All work <i>→</i></a><a class="allw__pill" href="archive.html">Archive <i>→</i></a></p></div>
+      <div class="wline__cards" id="wlineCards"></div>
+      <a class="wline__cap" id="wlineCap" href="work.html"><span class="wline__client" id="wlineClient"></span><span class="wline__line" id="wlineLine"></span><span class="wline__meta" id="wlineMeta"></span></a>
+    </div>
+  </section>
+
+  <!-- 05 PROCESS: how a job goes through the studio, one pill per step (on a grey board, like the rest of the boards) -->
+  <section class="sec board process" id="process" aria-label="How a job runs">
+    <div class="board__head"><p class="label"><span class="label__n">03</span> How a job runs</p><span></span><p class="label label__n">Wall to street</p></div>
+    <div class="proc">
+      <div class="proc__tabs" id="procTabs" role="tablist"></div>
+      <div class="proc__body">
+        <p class="say proc__say" id="procSay"></p>
+        <figure class="proc__img card"><div class="card__img" id="procImg"></div></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 NEWS: title cards with date and tag over a picture -->
+  <section class="sec board news" id="news">
+    <div class="board__head"><h2 class="label"><span class="label__n">04</span> News</h2><span></span><a class="board__all" href="news.html">All news →</a></div>
+    <div class="grid" id="newsGrid"><!-- from NEWS --></div>
+  </section>
+</main>
+
+<!-- 05 CONTACT: filled by site.js, same on every page -->
+<footer class="sec contact" id="contact"></footer>
+
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="data.js"></script>
+<script src="runner.js"></script>
+<script src="site.js"></script>
+<script src="home.js"></script>
+</body>
+</html>

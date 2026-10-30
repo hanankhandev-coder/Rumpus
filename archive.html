@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Archive — Rumpus</title>
+<meta name="description" content="The Rumpus archive: every picture from every job, on one sheet.">
+<link rel="icon" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wdth,wght@0,75..100,400..700;1,75..100,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try { if (sessionStorage.getItem('rumpus-curtain')) document.documentElement.classList.add('arriving'); } catch (e) {}</script>
+</head>
+<body data-page="archive">
+<main class="page arc" id="top">
+  <header class="phead">
+    <p class="label">Archive <span class="label__n" id="acount"></span></p>
+    <h1 class="say psay" id="asay">Every sheet we kept. <span class="say__grey">Pictures from <a href="#" data-f="Campaign">Campaign</a>, <a href="#" data-f="Identity">Identity</a>, <a href="#" data-f="Print">Print</a>, <a href="#" data-f="Film">Film</a>, <a href="#" data-f="Photography">Photography</a> and <a href="#" data-f="Studio">Studio</a>, loose on one table. <a href="#" data-f="All" class="is-on">Show everything</a></span></h1>
+  </header>
+  <div class="wbar arc__bar">
+    <form class="arc__q" id="aform" role="search"><label for="aq">Show me</label><input id="aq" type="search" placeholder="blue backdrop, 2025, press…" autocomplete="off"></form>
+    <div class="views" id="aviews"><button class="is-on" data-view="grid">Sheet</button><button data-view="list">List</button></div>
+  </div>
+  <div class="agrid" id="agrid"></div>
+  <ol class="alist" id="alist" hidden></ol>
+  <p class="arc__empty" id="aempty" hidden>Nothing on the sheet for that. Try a colour, a year or a client.</p>
+</main>
+
+<!-- the viewer -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Archive viewer">
+  <div class="lb__media" id="lbMedia"></div>
+  <p class="lb__no" id="lbNo"></p>
+  <button class="lb__close" id="lbClose">Close</button>
+  <div class="lb__foot"><p class="lb__t" id="lbT"></p><p class="lb__k" id="lbK"></p><a class="lb__go" id="lbGo" href="#">Open the case →</a><span class="lb__nav"><button id="lbPrev" aria-label="Previous">←</button><button id="lbNext" aria-label="Next">→</button></span></div>
+</div>
+
+<footer class="sec contact" id="contact"></footer>
+
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="data.js"></script>
+<script src="runner.js"></script>
+<script src="site.js"></script>
+<script src="pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio — Rumpus</title>
+<meta name="description" content="About Rumpus: an independent creative studio and print room in Porto.">
+<link rel="icon" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wdth,wght@0,75..100,400..700;1,75..100,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try { if (sessionStorage.getItem('rumpus-curtain')) document.documentElement.classList.add('arriving'); } catch (e) {}</script>
+</head>
+<body data-page="studio">
+<main class="page about" id="top">
+  <header class="phead">
+    <p class="label">Studio</p>
+    <h1 class="say">Rumpus <i>(n.)</i> a noisy commotion. <span class="say__grey">We make it for festivals, labels and small brands, from a print room on Rua do Almada.</span></h1>
+  </header>
+
+  <figure class="about__hero crop"><img src="img/news/event.webp" alt="Two visitors leaning in to each other through a slit in a gallery wall at the studio's Partition evening"><figcaption><span>Partition, an evening of riso portraits</span><span>Rua do Almada, January 2026</span></figcaption></figure>
+
+  <section class="rows">
+    <div class="row reveal"><h2><span>(01)</span>What we believe</h2><p>That loud is not the same as big. A festival with no budget, a label with no shop window and an atelier with nine coats all deserve work that stops people in the street. We make it with paper, ink and a camera, and we make it ourselves.</p></div>
+    <div class="row reveal"><h2><span>(02)</span>How we work</h2><p>Everything starts on the wall, not the screen: prints, contact sheets, swatches, pinned up and moved around until the idea holds. Then it goes to the press. We shoot in our own studio and print in our own print room, so the people who had the idea are the people pulling the sheets.</p></div>
+    <div class="row reveal"><h2><span>(03)</span>What we do</h2>
+      <div class="cols">
+        <ul><li class="h">Campaign</li><li>Art direction</li><li>Photography</li><li>Paste-ups</li><li>Social</li></ul>
+        <ul><li class="h">Identity</li><li>Naming</li><li>Visual identity</li><li>Sleeves &amp; packaging</li><li>Signage</li></ul>
+        <ul><li class="h">Print</li><li>Risograph</li><li>Screen print</li><li>Books &amp; editorial</li><li>Posters</li></ul>
+        <ul><li class="h">Film</li><li>Campaign film</li><li>Motion</li><li>Studio shoots</li><li>Edit &amp; grade</li></ul>
+      </div></div>
+  </section>
+
+  <section class="team">
+    <div class="team__head"><h2 class="label">People</h2><span id="peopleCount"></span></div>
+    <ol class="tlist" id="people"></ol>
+    <div class="team__head"><h2 class="label">Presses</h2><span id="pressCount"></span></div>
+    <ol class="tlist tlist--press" id="presses"></ol>
+  </section>
+
+  <section class="rows">
+    <div class="row reveal"><h2><span>(04)</span>Clients</h2><p class="list">Salto Livre, Riverbend Records, Ochre Editions, Piscina Press, Casa Oito, Teatro Rivoli, Mercado do Bolhão, Douro Wine Week, Rua Nova, Serralves Shop, Casa da Música, Porto Design Biennale</p></div>
+    <div class="row reveal"><h2><span>(05)</span>Collaborators</h2><p class="list">Studio Ponte (photography), Gráfica Almada (paper), Lumen Grade (colour), Sara Couto (copy)</p></div>
+    <div class="row reveal"><h2><span>(06)</span>Press</h2><p class="list">It's Nice That, The Brand Identity, Eye on Design, Riso Club Journal, Público P3</p></div>
+    <div class="row reveal"><h2><span>(07)</span>Jobs</h2><p>We're a small room and we like it that way. No open roles right now, but we always want to meet printers, photographers and designers who get their hands dirty. Send work to <a href="mailto:ola@rumpus.pt">ola@rumpus.pt</a>.</p></div>
+    <div class="row reveal"><h2><span>(08)</span>When</h2><p>Tuesday to Saturday, ten to seven. Same time as London, one hour behind Paris, five ahead of New York. The presses rest on Sundays and Mondays; so do we.</p></div>
+  </section>
+</main>
+
+<footer class="sec contact" id="contact"></footer>
+
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="data.js"></script>
+<script src="runner.js"></script>
+<script src="site.js"></script>
+<script src="pages.js"></script>
+</body>
+</html>

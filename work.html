@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work — Rumpus</title>
+<meta name="description" content="Campaigns, identities, film and print by Rumpus, a creative studio in Porto.">
+<link rel="icon" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wdth,wght@0,75..100,400..700;1,75..100,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try { if (sessionStorage.getItem('rumpus-curtain')) document.documentElement.classList.add('arriving'); } catch (e) {}</script>
+</head>
+<body data-page="work">
+<main class="page" id="top">
+  <header class="phead">
+    <p class="label">Work <span class="label__n" id="wcount"></span></p>
+    <h1 class="say psay" id="wsay">Loud images. <span class="say__grey">Projects within <a href="#" data-f="Campaign">Campaign</a>, <a href="#" data-f="Identity">Identity</a>, <a href="#" data-f="Print">Print</a> and <a href="#" data-f="Film">Film</a>, for festivals, labels and small brands, 2019 — 2026. <a href="#" data-f="All" class="is-on">Show all</a></span></h1>
+  </header>
+  <div class="wbar"><span class="wbar__hint">Pick a word to filter</span><div class="views" id="views"><button class="is-on" data-view="grid">Sheet</button><button data-view="index">Index</button></div></div>
+  <div class="wgrid" id="wgrid"></div>
+  <ol class="wlist" id="wlist" hidden></ol>
+</main>
+<div class="peek" id="peek" aria-hidden="true"><img alt=""></div>
+
+<footer class="sec contact" id="contact"></footer>
+
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="data.js"></script>
+<script src="runner.js"></script>
+<script src="site.js"></script>
+<script src="pages.js"></script>
+</body>
+</html>
