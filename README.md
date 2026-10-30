@@ -1,3 +1,5 @@
+Live: https://hanankhandev-coder.github.io/Rumpus/
+
 # Rumpus
 
 A demo site for **Rumpus**, a fictional independent creative studio and print room in Porto: campaigns, identity, film, riso and screen print. Plain HTML, CSS and JS. No build step and no dependencies apart from Lenis (smooth scroll, from unpkg).
